@@ -1,0 +1,4 @@
+participant1:
+  study_id: TFD-1111
+  email: participant1@example.com
+  encrypted_password: <%= Participant.new.send(:password_digest, PasswordGenerator.get) %>
